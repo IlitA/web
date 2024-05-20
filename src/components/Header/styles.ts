@@ -18,19 +18,10 @@ export const HeaderComponent = styled.header`
   }
 
   li {
-    font-size: 1.4rem;
     width: 80px;
-  }
-
-  li:hover {
-    text-decoration: underline;
   }
 
   li:not(:last-child) {
     margin-right: 40px;
-  }
-
-  a {
-    text-decoration: none;
   }
 `

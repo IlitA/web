@@ -1,7 +1,15 @@
 import styled from "styled-components";
 
+export const HomePage = styled.div`
+  > * {
+    padding: 24px;
+    margin-bottom: 64px;
+    background-color: #ffffff44;
+    border-radius: 8px;
+  }
+`
+
 export const Title = styled.h1`
-  margin-bottom: 24px;
   font-weight: 600;
 `
 

@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
 import { HeaderComponent } from './styles';
 import { Logo } from '../../assets/logo';
+import { Link } from '../Link';
 
 export const Header = () => {
   return (
