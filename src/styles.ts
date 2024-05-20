@@ -19,7 +19,19 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
+
+  ::selection {
+    color: ${({ theme }) => theme.colors.white};
+    -webkit-text-fill-color: ${({ theme }) => theme.colors.white};
+    background-color: ${({ theme }) => theme.colors.purple};
+  }
 `;
+
+export const AppWrapper = styled.div`
+  max-width: 64rem;
+  margin: auto;
+  padding: 24px 40px;
+`
 
 export const BodyWrapper = styled.div`
   padding: 24px 40px;

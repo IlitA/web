@@ -16,7 +16,7 @@ export const ContactItem = styled.li`
   display: flex;
   align-items: center;
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 
   > *:first-child {
     margin-right: 8px;

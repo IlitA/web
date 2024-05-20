@@ -1,4 +1,4 @@
-import { css } from "styled-components";
+import styled, { css } from "styled-components";
 
 export const theme = {
   colors: {
@@ -17,3 +17,11 @@ export const textGradient = css`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `
+
+export const Text = styled.p<{ $size?: number; $hasGradient?: boolean }>`
+  font-size: ${({ $size }) => $size ? `${$size}em` : "1em"};
+  font-weight: ${({ $hasGradient }) => $hasGradient ? `800` : `400`};
+  line-height: 1;
+
+  ${({ $hasGradient }) => $hasGradient && textGradient};
+`;
