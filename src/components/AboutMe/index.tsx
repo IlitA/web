@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { Text } from '../../theme';
 import { AboutMeComponent, AboutContent, Title, LinkButton } from './styles';
 
