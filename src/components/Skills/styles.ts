@@ -14,12 +14,11 @@ export const SkillsComponent = styled.div`
     margin: 0;
     padding: 0;
     list-style-type: none;
+    gap: 8px 16px;
   }
 
   li {
     display: flex;
-    align-items: center;
-    margin: 8px;
   }
 
   i {

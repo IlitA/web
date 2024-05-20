@@ -7,7 +7,11 @@ export const HomePage = styled.div`
     border-radius: 8px;
 
     &:not(:last-child) {
-      margin-bottom: 40px;
+      margin-bottom: 24px;
+
+      @media screen and (min-width: 800px) {
+        margin-bottom: 40px;
+      }
     }
   }
 `

@@ -19,9 +19,15 @@ export const textGradient = css`
 `
 
 export const Text = styled.p<{ $size?: number; $hasGradient?: boolean }>`
-  font-size: ${({ $size }) => $size ? `${$size}em` : "1em"};
-  font-weight: ${({ $hasGradient }) => $hasGradient ? `800` : `400`};
+  font-size: ${({ $size }) => $size ? `max(${$size / 2}em, 1rem)` : "1em"};
+  font-weight: ${({ $hasGradient }) => $hasGradient ? `600` : `400`};
   line-height: 1;
+  margin-bottom: 16px;
 
   ${({ $hasGradient }) => $hasGradient && textGradient};
+
+  @media screen and (min-width: 800px) {
+    font-size: ${({ $size }) => $size ? `${$size}em` : "1em"};
+    font-weight: ${({ $hasGradient }) => $hasGradient ? `800` : `400`};
+  }
 `;

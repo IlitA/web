@@ -7,9 +7,9 @@ export const AboutMe = () => {
       <Title>Hey There!</Title>
 
       <AboutContent>
-        <Text $size={2}>I am Ilit,</Text><br />
-        <Text $size={6} $hasGradient>Frontend Web Developer</Text><br />
-        <Text $size={1.2}>I'm all about crafting cool, user-friendly websites and constantly learning new tech.</Text><br />
+        <Text $size={2}>I am Ilit,</Text>
+        <Text $size={6} $hasGradient>Frontend Web Developer</Text>
+        <Text $size={1.2}>I'm all about crafting cool, user-friendly websites and constantly learning new tech.</Text>
         {/* <Text $size={1.2}>Based in beautiful Barcelona</Text> */}
       </AboutContent>
 

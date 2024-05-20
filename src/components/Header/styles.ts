@@ -3,8 +3,12 @@ import styled from "styled-components";
 export const HeaderComponent = styled.header`
   display: flex;
   align-items: center;
-  padding: 24px 40px;
+  padding: 16px 24px;
   background-color: #00000088;
+
+  @media screen and (min-width: 800px) {
+    padding: 24px 40px;
+  }
 
   nav {
     margin-left: 40px;

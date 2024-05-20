@@ -28,11 +28,18 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const AppWrapper = styled.div`
-  max-width: 64rem;
   margin: auto;
-  padding: 24px 40px;
+  min-width: 400px;
+
+  @media screen and (min-width: 800px) {
+    max-width: 64rem;
+  }
 `
 
 export const BodyWrapper = styled.div`
-  padding: 24px 40px;
+  padding: 8px 24px;
+
+  @media screen and (min-width: 800px) {
+    padding: 24px 40px;
+  }
 `
