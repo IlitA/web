@@ -1,14 +1,11 @@
+import { AboutMe } from "../../components/AboutMe";
 import { Contact } from "../../components/Contact";
-import { HomePage, SubTitle, Title } from "./styles";
+import { HomePage } from "./styles";
 
 export const Home = () => {
   return (
     <HomePage>
-      <div>
-        {/* intro + about me */}
-        <Title>Hey There</Title>
-        <SubTitle>... Coming soon</SubTitle>
-      </div>
+      <AboutMe />
 
       {/* skills, stack and tools */}
 
