@@ -3,11 +3,12 @@ import styled from "styled-components";
 export const AboutMeComponent = styled.div``
 
 export const Title = styled.h1`
+  text-transform: uppercase;
   font-size: 2rem;
   margin-bottom: 16px;
 
   @media screen and (min-width: 800px) {
-    font-size: 4.4rem;
+    font-size: 4rem;
   }
 `
 
@@ -17,7 +18,7 @@ export const LinkButton = styled.a`
   display: inline-block;
   margin-top: 16px;
   padding: 16px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   background: transparent;
   border: none;
@@ -32,6 +33,5 @@ export const LinkButton = styled.a`
 
   @media screen and (min-width: 800px) {
     padding: 16px 32px;
-    font-size: 1.2rem;
   }
 `

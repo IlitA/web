@@ -45,11 +45,12 @@ export const textGradient = css`
 `
 
 export const SubTitle = styled.h2`
-  margin-bottom: 24px;
+  font-size: 1.4rem;
+  margin-bottom: 16px;
 `
 
 export const Text = styled.p<{ $size?: number; $hasGradient?: boolean }>`
-  font-size: ${({ $size }) => $size ? `max(${$size / 2}em, 1rem)` : "1em"};
+  font-size: ${({ $size }) => $size ? `max(${$size / 2}rem, 1rem)` : "1em"};
   font-weight: ${({ $hasGradient }) => $hasGradient ? `600` : `400`};
   line-height: 1;
   margin-bottom: 16px;
