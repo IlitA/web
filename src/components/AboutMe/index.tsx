@@ -4,7 +4,6 @@ import { AboutMeComponent, AboutContent, Title, LinkButton } from './styles';
 export const AboutMe = () => {
   return (
     <AboutMeComponent>
-      {/* intro + about me */}
       <Title>Hey There!</Title>
 
       <AboutContent>
