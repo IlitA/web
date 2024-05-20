@@ -6,7 +6,7 @@ export const ContactComponent = styled.div`
 
 export const ContactList = styled.ul`
   display: flex;
-  gap: 16px 24px;
+  gap: 16px;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 16px;
@@ -14,8 +14,7 @@ export const ContactList = styled.ul`
   list-style-type: none;
 
   @media screen and (min-width: 800px) {
-    margin-top: 24px;
-    gap: 24px;
+    gap: 32px;
   }
 `
 
@@ -23,11 +22,7 @@ export const ContactItem = styled.li`
   display: flex;
   align-items: center;
   cursor: pointer;
-  font-size: 1rem;
-
-  @media screen and (min-width: 800px) {
-    font-size: 1.2rem;
-  }
+  font-size: 1.2rem;
 
   > *:first-child {
     margin-right: 8px;

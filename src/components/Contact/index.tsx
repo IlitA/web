@@ -2,11 +2,12 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { Link } from '../Link';
 import { ContactComponent, ContactItem, ContactList } from './styles';
+import { SubTitle } from "../../commonStyles";
 
 export const Contact = () => {
   return (
     <ContactComponent>
-      <small>Contact me</small>
+      <SubTitle>Contact me</SubTitle>
 
       <ContactList>
         <ContactItem>

@@ -1,4 +1,4 @@
-import { Text } from '../../theme';
+import { Text } from '../../commonStyles';
 import { AboutMeComponent, AboutContent, Title, LinkButton } from './styles';
 
 export const AboutMe = () => {

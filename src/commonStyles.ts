@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle, css } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   body {
@@ -29,17 +29,35 @@ export const GlobalStyle = createGlobalStyle`
 
 export const AppWrapper = styled.div`
   margin: auto;
-  min-width: 400px;
-
-  @media screen and (min-width: 800px) {
-    max-width: 64rem;
-  }
-`
-
-export const BodyWrapper = styled.div`
+  max-width: 100%;
   padding: 8px 24px;
 
   @media screen and (min-width: 800px) {
     padding: 24px 40px;
+    max-width: 64rem;
   }
 `
+
+export const textGradient = css`
+  background: ${({ theme }) => `-webkit-linear-gradient(${theme.colors.lightPurple}, ${theme.colors.purple})`};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`
+
+export const SubTitle = styled.h2`
+  margin-bottom: 24px;
+`
+
+export const Text = styled.p<{ $size?: number; $hasGradient?: boolean }>`
+  font-size: ${({ $size }) => $size ? `max(${$size / 2}em, 1rem)` : "1em"};
+  font-weight: ${({ $hasGradient }) => $hasGradient ? `600` : `400`};
+  line-height: 1;
+  margin-bottom: 16px;
+
+  ${({ $hasGradient }) => $hasGradient && textGradient};
+
+  @media screen and (min-width: 800px) {
+    font-size: ${({ $size }) => $size ? `${$size}em` : "1em"};
+    font-weight: ${({ $hasGradient }) => $hasGradient ? `800` : `400`};
+  }
+`;

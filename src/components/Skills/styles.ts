@@ -3,10 +3,6 @@ import styled from "styled-components";
 export const SkillsComponent = styled.div`
   text-align: center;
 
-  h2 {
-    margin-bottom: 24px;
-  }
-
   ul {
     display: flex;
     flex-wrap: wrap;

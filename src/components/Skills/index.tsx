@@ -1,6 +1,6 @@
-import { Text } from '../../theme';
-import { SiJavascript, SiTypescript, SiReact, SiRedux, SiGithub, SiWebpack, SiCss3, SiHtml5, SiJquery, SiSass, SiStyledcomponents } from "react-icons/si";
+import { SiJavascript, SiTypescript, SiReact, SiRedux, SiWebpack, SiCss3, SiHtml5, SiJquery, SiSass, SiStyledcomponents } from "react-icons/si";
 import { SkillsComponent } from './styles';
+import { SubTitle, Text } from '../../commonStyles';
 
 const skillList = [
   { icon: <SiTypescript />, label: 'Typescript' },
@@ -13,13 +13,12 @@ const skillList = [
   { icon: <SiSass />, label: 'Sass' },
   { icon: <SiJquery />, label: 'JQuery' },
   { icon: <SiWebpack />, label: 'Webpack' },
-  { icon: <SiGithub />, label: 'GitHub' },
   // { icon: <BiStar />, label: '...' },
 ]
 export const MySkills = () => {
   return (
     <SkillsComponent>
-      <h2>My skills</h2>
+      <SubTitle>My skills</SubTitle>
 
       <ul>
         {skillList.map(skill => (
